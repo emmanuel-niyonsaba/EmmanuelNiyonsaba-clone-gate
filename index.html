@@ -66,7 +66,8 @@
                     <h2 class="text-white font-bold text-2xl">Find your course</h2>
                     <input type="text" name="" id="" class=" bg-white text-black w-[40%] h-14">
                     <button class=" p-4  text-white items-center border-1 border-white">Search</button>
-                    <h3 class=" hidden lg:block text-white underline font-bold">Courses by A-Z <br> Coourse by Subject</h3>
+                    <h3 class=" hidden lg:block text-white underline font-bold">Courses by A-Z <br> Coourse by Subject
+                    </h3>
 
                 </div>
                 <div class=" mr-5   md:mr-0 md:flex gap-4 justify-center pb-5">
@@ -146,9 +147,9 @@
                     </button>
                 </div>
             </div>
-            <div class="w-full md:w-[40%]">
-                <img class="" src="/public/images/Two,students,working,on,campus.jpeg" alt="">
-            </div>
+
+            <img class="w-full  md:w-[40%]" src="/public/images/Two,students,working,on,campus.jpeg" alt="">
+
         </div>
         <div class=" bg-[#EF426F] flex justify-around p-5 items-center  gap-6 m-4">
             <img class="w-20 text-2xl text-white brightness-0 invert-100" src="./public/images/hands-image.svg" alt="">
@@ -163,10 +164,10 @@
 
 
         <h1 class=" text-[#212A30] text-4xl font-bold mt-30 p-4">Our rankings and reputation</h1>
-        <div class=" flex  p-20 items-center">
+        <div class=" md:flex  p-20 space-y-4 items-center">
 
-            <div class=" flex ">
-                <img src="./public/images/top-150.png" alt="" class=" w-40 h-50 ">
+            <div class=" md:flex gap-3 ">
+                <img src="./public/images/top-150.png" alt="" class=" w-full md:w-40 md:h-50 ">
                 <div class="  space-y-5">
                     <h2 class=" font-bold text-[18px]">World top 150</h2>
                     <p class=" text-[19px]">QS World University Rankings 2026 places us in the Top 150 global
@@ -176,21 +177,21 @@
             </div>
 
             <div class=" space-y-8">
-                <div class=" flex  gap-5">
-                    <img src="./public/images/gold-2023.png" alt="" class=" w-25">
+                <div class=" md:flex  gap-5 space-y-4">
+                    <img src="./public/images/gold-2023.png" alt="" class=" w-full md:w-25">
                     <p class=" text-[18px] ">
                         Teaching Gold
                         Our teaching is rated Gold, the highest level, by the Teaching Excellence Framework.</p>
                 </div>
-                <div class=" flex  gap-5">
-                    <img src="./public/images/over-per.jpeg" alt="" class=" w-25">
+                <div class=" md:flex  gap-5 space-y-4">
+                    <img src="./public/images/over-per.jpeg" alt="" class="w-full md:w-25">
                     <p class=" text-[18px] ">
                         19th in the UK
                         We're ranked 19th overall in the United Kingdom in the Complete University Guide's UK League
                         Table.</p>
                 </div>
-                <div class=" flex gap-5">
-                    <img src="./public/images/world-unverst.png" alt="" class=" w-25">
+                <div class="  md:flex gap-5 space-y-4">
+                    <img src="./public/images/world-unverst.png" alt="" class="  w-full md:w-25">
                     <p class=" text-[18px] ">We’re ranked in the top 160 universities globally in the Times Higher
                         Education World University rankings..</p>
                 </div>
@@ -198,22 +199,26 @@
 
             </div>
         </div>
-        <button class=" border-1 border-black p-5 items-center m-5">
-            <p class=" text-[20px] hover:underline ">Explore our ranking and reputation</p>
-        </button>
+        <div class=" grid grid-cols-1 md:block">
+            <button class=" border-1 border-black p-5 items-center m-5">
+                <p class=" text-[20px] hover:underline ">Explore our ranking and reputation</p>
+            </button>
+        </div>
 
 
-        <div class=" flex  m-4">
-            <div class=" bg-[#212B58] space-y-9 w-[70%] p-6">
+        <div class=" md:flex  m-4 space-y-4">
+            <div class=" bg-[#212B58] space-y-9 md:w-[70%] w-full p-6">
                 <h1 class=" text-3xl text-white font-bold">Discover Liverpool in India</h1>
                 <p class=" text-[18px] text-white">Introducing our new campus in the city of Bengaluru, the centre of
                     high-tech industry in India. Find out more about our new campus, which will strengthen existing
                     partnerships, build new connections and bring our world-class teaching and research to India.</p>
-                <button class=" border-1 border-white p-4">
-                    <p class=" text-[17px] text-white hover:underline cursor-pointer">Find out more</p>
-                </button>
+                <div class="  grid grid-cols-1 md:block">
+                    <button class=" border-1 border-white p-4 ">
+                        <p class=" text-[17px] text-white hover:underline cursor-pointer">Find out more</p>
+                    </button>
+                </div>
             </div>
-            <img src="./public/images/India,campus,header(1).jpeg" alt="" class=" w-[30%]">
+            <img src="./public/images/India,campus,header(1).jpeg" alt="" class="  w-full md:w-[30%]">
         </div>
 
         <h1 class=" p-8 text-4xl  text-[#333F47] font-bold">Our research: Transforming lives, changing the world</h1>
@@ -221,7 +226,7 @@
             member of the Russell Group, research is the driving force behind our success, tackling real-world
             challenges to have a positive impact on society and the world around us.</p>
 
-        <div class=" flex gap-3 m-4">
+        <div class=" md:flex gap-3 m-4">
             <div class=" p-3 border-t border-black space-y-3">
                 <h2 class=" text-[18px] font-bold text-[#212B58] hover:underline">Research forntiers</h2>
                 <p class=" text-[18px]">Learn more about our research and how we're driving innovation in materials
@@ -239,9 +244,11 @@
                     discovery, particlee physics and therapeutics innovation to build a better future</p>
             </div>
         </div>
-        <button class=" border-1 border-black p-5 items-center m-5">
+        <div class=" grid grid-cols-1 md:block">
+            <button class=" border-1 border-black p-5 items-center m-5">
             <p class=" text-[20px] hover:underline ">Explore our Research</p>
         </button>
+        </div>
 
         <div class="flex gap-4 items-center p-6">
             <img src="./public/images/student-life,(3),(1).jpeg" alt="" class=" w-[40%]">
