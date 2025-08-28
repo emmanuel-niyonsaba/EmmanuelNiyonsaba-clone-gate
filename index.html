@@ -28,13 +28,24 @@
             </div>
             <div class=" flex gap-3 md:hidden">
                 <img src="./public/images/search.png" alt="" class=" w-3 brightness-0 invert-100 ">
-                <button class="text-3xl text-white">☰</button>
+                <button class="text-3xl text-white btn-1-1" onclick="toggleMenu()">☰</button>
 
             </div>
         </div>
         <div class=" flex justify-between items-center p-4">
             <div>
-                <ul class=" hidden md:flex  gap-4 ">
+                <ul
+                    class="hidden md:flex  text-black md:text-white md gap-4 list-of-items md:bg-transparent md:flex-row flex-col bg-white absolute top-14 left-0 w-full  p-4">
+                    <li class="font-bold text-[18px] hover:underline cursor-pointer">Study</li>
+                    <li class="font-bold text-[18px] hover:underline cursor-pointer">Students Life</li>
+                    <li class="font-bold text-[18px] hover:underline cursor-pointer">Research And Innovation
+                    </li>
+                    <li class="font-bold text-[18px] hover:underline cursor-pointer">Global</li>
+                    <li class="font-bold text-[18px] hover:underline cursor-pointer">About Us</li>
+                </ul>
+            </div>
+            <!-- <div>
+                <ul class=" hidden  md:flex gap-4  list-of-items">
                     <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Study</li>
                     <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Students Life</li>
                     <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Rsearch And Innovation
@@ -42,7 +53,7 @@
                     <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Grobal</li>
                     <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">About Us</li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="  hidden md:flex hover:underline  ">
                 <img src="./public/images/search.png" alt="" class="text-white w-3 bg-white hidden md:block">
@@ -112,7 +123,8 @@
 
 
         <div class=" bg-[#EF426F] md:flex space-y-3 justify-around p-5 items-center  gap-6 m-4">
-            <img class="w-30 md:w-20 text-2xl text-white brightness-0 invert-100" src="./public/images/laptop.svg" alt="">
+            <img class="w-30 md:w-20 text-2xl text-white brightness-0 invert-100" src="./public/images/laptop.svg"
+                alt="">
             <h1 class=" text-3xl font-bold text-white">Manager your offer</h1>
 
             <h1 class=" text-2xl text-white">Find out how to confirm your place to <br> study at Liverpool and make
@@ -246,8 +258,8 @@
         </div>
         <div class=" grid grid-cols-1 md:block">
             <button class=" border-1 border-black p-5 items-center m-5">
-            <p class=" text-[20px] hover:underline ">Explore our Research</p>
-        </button>
+                <p class=" text-[20px] hover:underline ">Explore our Research</p>
+            </button>
         </div>
 
         <div class=" md:flex gap-4 items-center p-6">
@@ -257,18 +269,18 @@
                 <p class=" text-[20px] ">Enjoy a fantastic student experience when you study with us. Explore the Guild
                     of Students, learn more about what’s happening in our amazing home city and discover your
                     accommodation options</p>
-                
-                   <div class=" grid grid-cols-1 md:block gap-3">
-                     <button class=" border-1 border-black p-4">
+
+                <div class=" grid grid-cols-1 md:block gap-3">
+                    <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Student life at Liverpool</p>
                     </button>
                     <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Why choose Liverpool?</p>
-                    </button> 
+                    </button>
                     <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Choose accommodation</p>
                     </button>
-                   </div>
+                </div>
 
             </div>
         </div>
@@ -280,12 +292,13 @@
                     engagement and how we’re making a difference to the world.</p>
                 <div class=" grid grid-cols-1 space-y-3 lg:block ">
                     <button class=" border-1 border-white p-4">
-                    <p class=" text-[17px] text-white hover:underline cursor-pointer">Explore our Grobal partnerships
-                    </p>
-                </button>
-                <button class=" border-1 border-white p-4">
-                    <p class=" text-[17px] text-white hover:underline cursor-pointer">Work with us</p>
-                </button>
+                        <p class=" text-[17px] text-white hover:underline cursor-pointer">Explore our Grobal
+                            partnerships
+                        </p>
+                    </button>
+                    <button class=" border-1 border-white p-4">
+                        <p class=" text-[17px] text-white hover:underline cursor-pointer">Work with us</p>
+                    </button>
                 </div>
             </div>
             <img src="./public/images/global-cropped,(1).jpeg" alt="" class="  w-full lg:w-[30%]">
@@ -329,9 +342,9 @@
                     </div>
                 </div>
             </div>
-           <div class="grid grid-cols-1 md:block">
-             <button class=" text-[15px] border-1 border-black p-3 m-4">See more News</button>
-           </div>
+            <div class="grid grid-cols-1 md:block">
+                <button class=" text-[15px] border-1 border-black p-3 m-4">See more News</button>
+            </div>
         </div>
 
         <div class="  bg-[#DBDBD3] p-4">
@@ -450,7 +463,14 @@
             <p class=" text-[18px] p-2"> &copy; Univeristy of Liverpool</p>
 
         </div>
-
+        <!-- <link rel="stylesheet" href="/script.js"> -->
+        <script>
+            function toggleMenu() {
+                let list = document.querySelector(".list-of-items");
+                list.classList.toggle("hidden");  // toggles visibility
+                list.classList.toggle("flex");    // ensures it uses flex when visible
+            }
+        </script>
 </body>
 
 </html>
