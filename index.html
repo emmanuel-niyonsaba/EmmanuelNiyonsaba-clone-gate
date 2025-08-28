@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./public/style.css">
 </head>
+
 <body>
-   <h1 class=" bg-red-500">This is  page of cloning</h1> 
+    <div class="w-full h-screen bg-[url('/public/images/welcome-homepage-new.jpeg')] bg-cover bg-center">
+        <div class=" flex justify-between items-center p-4">
+            <div>
+                <img src="/public/images/log-image.svg" class=" bg-white/30 w-40">
+            </div>
+            <div>
+               <ul class=" text-white flex gap-4">
+                 <li class=" hover:underline cursor-pointer">News</li>
+                <li  class=" hover:underline cursor-pointer ">Jobs</li>
+                <li  class=" hover:underline cursor-pointer">Donate</li>
+                <li  class=" hover:underline cursor-pointer">A-Z</li>
+                <li  class=" hover:underline cursor-pointer">Almin</li>
+                <li  class=" hover:underline cursor-pointer">Staff</li>
+                <li  class=" hover:underline cursor-pointer">Students</li>
+               </ul>
+            </div>
+        </div>
+        <div class=" flex justify-between items-center p-4">
+            <div> 
+                <ul class=" flex  gap-4 "> 
+                    <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Study</li>
+                    <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Students Life</li>
+                    <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Rsearch And Innovation</li>
+                    <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">Grobal</li>
+                    <li class=" font-bold text-[18px] hover:underline cursor-pointer  text-white">About Us</li>
+                </ul>
+            </div>
+
+            <div class=" flex hover:underline  ">
+                <img src="./public/images/search.png" alt=""  class="text-white w-3 bg-white">
+                <p class=" text-white">Search Site</p>
+            </div>
+        </div>
+            <div class=" border-3 border-white w-[50%]">
+                <h1 class=" text-4xl text-white p-4 font-bold"> YOUR NEXT CHAPTER STARTS NOW</h1>
+            </div>
+            <div class=" border-3 border-white w-[42%]">
+                <h1 class=" text-2xl text-white p-4 ">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</h1>
+            </div>
+            <div class=" border-1 border-white w-[22%] mt-5 mb-25 ">
+                <h1 class=" text-2xl text-white p-4 hover:underline ">Explore Our Welcome Activities. ></h1>
+            </div>
+            <div  class=" bg-[#212B58] " >
+
+                <div class=" flex gap-5 p-6 justify-center"> 
+                    <h2 class="text-white font-bold text-2xl">Find your course</h2>
+                    <input type="text" name="" id="" class=" bg-white text-black w-[40%] h-14">
+                    <button class=" p-4  text-white items-center border-1 border-white">Search</button>
+                    <h3  class=" text-white underline font-bold">Courses by A-Z <br> Coourse by Subject</h3>
+                    
+                </div>
+                <div class=" flex gap-4 justify-center pb-5">
+                    <div class=" flex gap-4 items-center">
+                        <div class=" w-5 h-5 rounded-full border-3 border-white bg-white"></div>
+                        <h2 class="text-[20px] font-bold text-white">Undergraduated</h2>
+                    </div>
+                    <div class=" flex gap-4 items-center">
+                        <div class=" w-5 h-5 rounded-full border-3 border-white bg-white hover:bg-[#212B58]"></div>
+                        <p class="text-[20px] font-bold text-white">Postgraduate tought</p>
+                    </div>
+                    <div class=" flex gap-4 items-center">
+                        <div class=" w-5 h-5 rounded-full border-3 border-white bg-white hover:bg-[#212B58]"></div>
+                        <h2 class="text-[20px] font-bold text-white">Postgraduate research</h2>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
 </body>
+
 </html>
