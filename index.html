@@ -250,49 +250,52 @@
         </button>
         </div>
 
-        <div class="flex gap-4 items-center p-6">
-            <img src="./public/images/student-life,(3),(1).jpeg" alt="" class=" w-[40%]">
+        <div class=" md:flex gap-4 items-center p-6">
+            <img src="./public/images/student-life,(3),(1).jpeg" alt="" class=" w-full md:w-[40%]">
             <div class="space-y-4 ">
                 <h1 class=" text-3xl font-bold text-[#212A30]">Discover a vibrant student life in Liverpool</h1>
                 <p class=" text-[20px] ">Enjoy a fantastic student experience when you study with us. Explore the Guild
                     of Students, learn more about what’s happening in our amazing home city and discover your
                     accommodation options</p>
-                <div class=" ">
-                    <button class=" border-1 border-black p-4">
+                
+                   <div class=" grid grid-cols-1 md:block gap-3">
+                     <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Student life at Liverpool</p>
                     </button>
                     <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Why choose Liverpool?</p>
-                    </button> <br> <br>
+                    </button> 
                     <button class=" border-1 border-black p-4">
                         <p class=" hover:underline text-[16px]">Choose accommodation</p>
                     </button>
+                   </div>
 
-                </div>
             </div>
         </div>
-        <div class=" flex  m-4">
-            <div class=" bg-[#212B58] space-y-9 w-[70%] p-6">
+        <div class=" lg:flex  m-4">
+            <div class=" bg-[#212B58] space-y-9  w-full lg:w-[70%] p-6">
                 <h1 class=" text-3xl text-white font-bold">We're making an impact across the globe</h1>
                 <p class=" text-[18px] text-white">We’re proud to be part of a global community, where collaboration
                     drives our success and impact across the world. Find out more about our commitment to global
                     engagement and how we’re making a difference to the world.</p>
-                <button class=" border-1 border-white p-4">
+                <div class=" grid grid-cols-1 space-y-3 lg:block ">
+                    <button class=" border-1 border-white p-4">
                     <p class=" text-[17px] text-white hover:underline cursor-pointer">Explore our Grobal partnerships
                     </p>
                 </button>
                 <button class=" border-1 border-white p-4">
                     <p class=" text-[17px] text-white hover:underline cursor-pointer">Work with us</p>
                 </button>
+                </div>
             </div>
-            <img src="./public/images/global-cropped,(1).jpeg" alt="" class=" w-[30%]">
+            <img src="./public/images/global-cropped,(1).jpeg" alt="" class="  w-full lg:w-[30%]">
         </div>
 
         <div class=" bg-[#EDEDE9] p-4">
             <h1 class=" text-3xl font-bold p-4">Latest News</h1>
-            <div class="  flex gap-3">
-                <div class="  flex bg-white gap-3 w-[50%]">
-                    <img src="./public/images/two-mens.png" alt="" class=" w-45 h-60">
+            <div class="  md:flex gap-3">
+                <div class="  md:flex bg-white gap-3  w-full md:w-[50%]">
+                    <img src="./public/images/two-mens.png" alt="" class=" w-full md:w-45 h-60">
                     <div class=" space-y-3 ">
                         <h1> 27 AUGUST 2025</h1>
                         <h1 class=" text-2xl font-bold hover:underline text-[#212B58]">Eceptional Liverpool scientists
@@ -326,15 +329,17 @@
                     </div>
                 </div>
             </div>
-            <button class=" text-[15px] border-1 border-black p-3 m-4">See more News</button>
+           <div class="grid grid-cols-1 md:block">
+             <button class=" text-[15px] border-1 border-black p-3 m-4">See more News</button>
+           </div>
         </div>
 
         <div class="  bg-[#DBDBD3] p-4">
 
             <h1 class=" text-3xl font-bold p-4">Latest Events</h1>
-            <div class=" flex gap-3 ">
-                <div class="  flex bg-white gap-3 w-[50%]">
-                    <img src="./public/images/science society.webp" alt="" class=" w-50 h-60">
+            <div class=" lg:flex gap-3 ">
+                <div class="  md:flex bg-white gap-3 w-full lg:w-[50%]">
+                    <img src="./public/images/science society.webp" alt="" class=" w-full lg:w-50 h-60">
                     <div class=" space-y-3 ">
                         <h1> 27 AUGUST 2025</h1>
                         <h1 class=" text-2xl font-bold hover:underline text-[#212B58]">Eceptional Liverpool scientists
@@ -363,14 +368,16 @@
                     </div>
                 </div>
             </div>
-            <button class=" text-[15px] border-1 border-black p-3 m-4">See more Events</button>
+            <div class=" grid grid-cols-1 md:block">
+                <button class=" text-[15px] border-1 border-black p-3 m-4">See more Events</button>
+            </div>
 
         </div>
 
         <div class=" bg-[#212A30] text-white ">
-            <div class=" flex justify-around p-5">
-                <img src="./public/images/footer-log.svg" alt="" class=" brightness-0 invert-100 w-50">
-                <ul class="list-none space-y-2  text-[p18x]">
+            <div class=" grid grid-cols-1 gap-3 md:grid-cols-2 lg:flex justify-around p-5">
+                <img src="./public/images/footer-log.svg" alt="" class=" brightness-0 invert-100 w-full lg:w-50 ">
+                <ul class="list-none space-y-2  text-[p18x] md:row-span-2 ">
                     <li class="text-2xl font-bold">Information for</li>
                     <li class="underline">Current students</li>
                     <li class="underline">Current staff</li>
@@ -417,7 +424,7 @@
             </div>
 
             <hr>
-            <div class=" flex justify-between p-5">
+            <div class=" md:flex  space-y-3 justify-between p-5">
                 <img src="./public/images/russel-group.svg" alt="" class=" w-40">
                 <div class=" flex gap-4">
                     <img src="/public/images/facebook.svg" alt="" class=" w-10 brightness-0 invert-100">
@@ -431,7 +438,7 @@
             </div>
 
             <hr>
-            <ul class="list-none  flex gap-1 text-[18px] justify-around">
+            <ul class="list-none  md:grid md:grid-cols-4  lg:flex gap-2 text-[18px] justify-around">
                 <li class="underline">Accessibility</li>
                 <li class="underline">Freedom of information</li>
                 <li class="underline">Cookie information</li>
